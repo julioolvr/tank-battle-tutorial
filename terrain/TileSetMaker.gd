@@ -12,7 +12,7 @@ func _ready():
 		for y in range(tex_height):
 			var region = Rect2(x * tile_size.x, y * tile_size.y,
 							   tile_size.x, tile_size.y)
-			var id = (x + y) * 10
+			var id = x + y * tex_width
 			ts.create_tile(id)
 			ts.tile_set_texture(id, texture)
 			ts.tile_set_region(id, region)
