@@ -53,8 +53,8 @@ curve = SubResource( 1 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Paths/Path2D" index="0"]
 
-position = Vector2( 235.224, 890.204 )
-rotation = -0.00141506
+position = Vector2( 235.223, 890.204 )
+rotation = -0.00144487
 offset = 200.0
 h_offset = 0.0
 v_offset = 0.0
@@ -68,5 +68,7 @@ lookahead = 4.0
 speed = 250
 gun_cooldown = 0.4
 health = 50
+
+[connection signal="shoot" from="Player" to="." method="_on_Tank_shoot"]
 
 

@@ -29,8 +29,7 @@ func control(delta):
 		pass
 
 func _on_DetectRadius_body_entered(body):
-	if body.name == 'Player':
-		target = body
+	target = body
 
 func _on_DetectRadius_body_exited(body):
 	if body == target:
